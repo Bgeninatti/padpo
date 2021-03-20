@@ -2,4 +2,4 @@
 msgid ""
 "internal_link_"
 msgstr ""
-"cemotnexistepas_"
+"link_interno_"
