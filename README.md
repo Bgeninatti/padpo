@@ -2,12 +2,12 @@
 
 Linter for gettext files (\*.po)
 
-For from https://github.com/AFPy/padpo
+Forked from https://github.com/AFPy/padpo
 
 Created to help the translation of official Python docs in Spanish: https://github.com/python/python-docs-es
 
-Il faut demander aux traducteurs s'ils n'ont pas de pot quand ils traduisent, maintenant ils ont `padpo`…
-:smile: :laughing: :stuck_out_tongue_winking_eye: :joy: (note : il était tard le soir quand j'ai trouvé le nom).
+Thanks and creadits to all the python-docs-fr team (L)
+
 
 ## License
 
@@ -79,6 +79,13 @@ pip install padpoes
 `./deliver.sh`
 
 ## Changelog
+
+### v0.12.0 (2021-03-22)
+
+- Removes `pygrammalect`
+- Removes NBSP checker
+- Migrates CLI commands to python-docs-es repository
+- Change glossary from French to Spanish
 
 ### v0.11.0 (2021-02-02)
 
