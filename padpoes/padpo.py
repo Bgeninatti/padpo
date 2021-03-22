@@ -7,9 +7,9 @@ from pathlib import Path
 
 import simplelogging
 
-from padpo.pofile import PoFile
-from padpo.checkers import checkers
-from padpo.github import pull_request_files
+from padpoes.pofile import PoFile
+from padpoes.checkers import checkers
+from padpoes.github import pull_request_files
 
 
 log = None
@@ -78,17 +78,17 @@ def main():
     files.add_argument(
         "-g",
         "--github",
-        metavar="python/python-docs-fr/pull/978",
+        metavar="python/python-docs-es/pull/978",
         type=str,
         help="path of pull request in GitHub to check",
         default="",
     )
     files.add_argument(
         "-p",
-        "--python-docs-fr",
+        "--python-docs-es",
         metavar="978",
         type=int,
-        help="ID of pull request in python-docs-fr repository",
+        help="ID of pull request in python-docs-es repository",
         default=0,
     )
     files.add_argument("--version", action="store_true", help="Return version")
@@ -116,12 +116,12 @@ def main():
     else:
         log.full_logging()
 
-    if args.github or args.python_docs_fr:
+    if args.github or args.python_docs_es:
         pull_request = ""
         if args.github:
             pull_request = args.github
-        if args.python_docs_fr:
-            pull_request = f"python/python-docs-fr/pull/{args.python_docs_fr}"
+        if args.python_docs_es:
+            pull_request = f"python/python-docs-es/pull/{args.python_docs_es}"
         pull_request_info = pull_request_files(pull_request)
         path = [pull_request_info.download_directory]
     else:

@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 
 import simplelogging
 
-from padpo.pofile import PoFile, PoItem
+from padpoes.pofile import PoFile, PoItem
 
 log = simplelogging.get_logger()
 
