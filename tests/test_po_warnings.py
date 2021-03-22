@@ -1,7 +1,7 @@
 """Test known to be good files."""
 from pathlib import Path
 
-from padpo.padpo import check_file
+from padpoes.padpo import check_file
 
 
 def pytest_generate_tests(metafunc):
