@@ -2,8 +2,8 @@
 
 import re
 
-from padpo.checkers.baseclass import Checker
-from padpo.pofile import PoItem
+from padpoes.checkers.baseclass import Checker
+from padpoes.pofile import PoItem
 
 
 class GlossaryChecker(Checker):

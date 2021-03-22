@@ -7,9 +7,9 @@ from pathlib import Path
 
 import simplelogging
 
-from padpo.pofile import PoFile
-from padpo.checkers import checkers
-from padpo.github import pull_request_files
+from padpoes.pofile import PoFile
+from padpoes.checkers import checkers
+from padpoes.github import pull_request_files
 
 
 log = None

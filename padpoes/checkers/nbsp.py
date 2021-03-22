@@ -2,8 +2,8 @@
 
 import re
 
-from padpo.checkers.baseclass import Checker, replace_quotes
-from padpo.pofile import PoItem
+from padpoes.checkers.baseclass import Checker, replace_quotes
+from padpoes.pofile import PoItem
 
 
 class NonBreakableSpaceChecker(Checker):
