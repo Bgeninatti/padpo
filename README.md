@@ -1,16 +1,10 @@
-# padpo
-
-[![PyPI](https://img.shields.io/pypi/v/padpo.svg)](https://pypi.python.org/pypi/padpo)
-[![PyPI](https://img.shields.io/pypi/l/padpo.svg)](https://github.com/vpoulailleau/padpo/blob/master/LICENSE)
-[![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![Downloads](https://pepy.tech/badge/padpo)](https://pepy.tech/project/padpo)
-[![Tests](https://github.com/AFPy/padpo/workflows/Tests/badge.svg)](https://github.com/AFPy/padpo/actions?query=workflow%3ATests)
-[![Maintainability](https://api.codeclimate.com/v1/badges/bbd3044291527d667778/maintainability)](https://codeclimate.com/github/AFPy/padpo/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/bbd3044291527d667778/test_coverage)](https://codeclimate.com/github/AFPy/padpo/test_coverage)
+# padpoes
 
 Linter for gettext files (\*.po)
 
-Created to help the translation of official Python docs in French: https://github.com/python/python-docs-fr
+For from https://github.com/AFPy/padpo
+
+Created to help the translation of official Python docs in Spanish: https://github.com/python/python-docs-es
 
 Il faut demander aux traducteurs s'ils n'ont pas de pot quand ils traduisent, maintenant ils ont `padpo`…
 :smile: :laughing: :stuck_out_tongue_winking_eye: :joy: (note : il était tard le soir quand j'ai trouvé le nom).
@@ -21,11 +15,6 @@ BSD 3-clause
 
 Pull request are welcome.
 
-## Padpo is part of poutils!
-
-[Poutils](https://pypi.org/project/poutils) (`.po` utils) is a metapackage to easily install useful Python tools to use with po files
-and `padpo` is a part of it! Go check out [Poutils](https://pypi.org/project/poutils) to discover the other tools!
-
 ## Usage
 
 Using the _activated virtual environment_ created during the installation:
@@ -33,25 +22,25 @@ Using the _activated virtual environment_ created during the installation:
 For a local input file:
 
 ```bash
-padpo --input-path a_file.po
+padpoes --input-path a_file.po
 ```
 
 or for a local input directory:
 
 ```bash
-padpo --input-path a_directory_containing_po_files
+padpoes --input-path a_directory_containing_po_files
 ```
 
 or for a pull request in python-docs-fr repository (here pull request #978)
 
 ```bash
-padpo --python-docs-fr 978
+padpoes --python-docs-fr 978
 ```
 
-or for a pull request in a GitHub repository (here python/python-docs-fr/pull/978)
+or for a pull request in a GitHub repository (here python/python-docs-es/pull/978)
 
 ```bash
-padpo --github python/python-docs-fr/pull/978
+padpoes --github python/python-docs-fr/pull/978
 ```
 
 ![Screenshot](screenshot.png)
@@ -66,7 +55,7 @@ or `--color` option to get a colored output.
 ### Automatic installation
 
 ```bash
-pip install padpo
+pip install padpoes
 ```
 
 ### Manual installation
